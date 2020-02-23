@@ -1,0 +1,11 @@
+ESTIMATE OF TIME TO COMPLETE LAB: 4 hours
+
+          START  | TIME  | LAB   | WORK
+DATE    | TIME   | SPENT | PART  | COMPLETED
+-------------------------------------------
+12/01   | 18:15  | 02:00 | 1     | Read lab and got big.c to report 16523 sectors
+
+                 ---------
+                   02:0  TOTAL TIME SPENT
+
+This lab in general was fairly easy especially since it took me about 2 hours to complete the whole thing. The only thing I don't understand why happens is that big.c reports that it misread a single sector for some reason. Other than that the lab really only required you to have a good understanding of how the file and directory structure is originally implemented. This in itself is not something that is difficult, so all in all it was a fun lab.

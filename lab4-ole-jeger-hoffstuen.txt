@@ -1,0 +1,14 @@
+ESTIMATE OF TIME TO COMPLETE LAB: 12 hours
+
+          START  | TIME  | LAB   | WORK
+DATE    | TIME   | SPENT | PART  | COMPLETED
+-------------------------------------------
+10/13   | 20:30  | 01:30 | 1     | Read lab and started on the initial threading API implementation.
+10/14   | 13:00  | 03:15 | 1     | Finished implementation of threading API.
+10/14   | 23:00  | 01:00 | 1     | Started on the mutex lock.
+10/15   | 14:45  | 02:00 | 1     | Finished mutex lock implementation.
+
+                 ---------
+                   07:45  TOTAL TIME SPENT
+
+In this lab I really didn't encounter any major issues. The tasks themselves were easily implementable considereing the fact that you have to keep in mind the interaction between the files that provide the user interface to system calls as well as how the underlying kernel procedures are defined. I spend some time trying to figure out some stupid compiler issues like why the structure `lock_t` I defined in `mutex.h` wasn't accessible in files like `defs.h` and `user.h`, although this turned out to be an easily fixable issue that could be resolved by defining the type name at the start of the respective files.

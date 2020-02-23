@@ -1,0 +1,21 @@
+Threading API:
+
+proc.h    : Added the thread identifier `tid` to the `proc` structure. Also added a pointer to the return values of the threads as well as a counter to keep track of the number of threads of the associated process.
+proc.c    : Initialized `tid` to 0, and set the thread count to 1 in `allocproc()`. Also implemented `thread_create()`, `thread_join()`, and `thread_exit()`.
+defs.h    : Added definitions for `thread_create()`, `thread_join()`, and `thread_exit()`
+user.h    : Added definitions for `thread_create()`, `thread_join()`, and `thread_exit()`
+usys.S    : Added definitions for `thread_create()`, `thread_join()`, and `thread_exit()`
+syscall.c : Added definitions for `thread_create()`, `thread_join()`, and `thread_exit()`
+sysproc.c : Added definitions for `thread_create()`, `thread_join()`, and `thread_exit()`
+syscall.h : Added definitions for `SYS_thread_create`, `SYS_thread_join`, and `SYS_thread_exit` 
+
+Mutex Lock:
+
+proc.c    : Implemented `lock_init()`, `lock_acquire()`, `lock_release()`
+defs.h    : Added definitions for `lock_init()`, `lock_acquire()`, `lock_release()`
+user.h    : Added definitions for `lock_init()`, `lock_acquire()`, `lock_release()`
+usys.S    : Added definitions for `lock_init()`, `lock_acquire()`, `lock_release()`
+syscall.c : Added definitions for `lock_init()`, `lock_acquire()`, `lock_release()`
+sysproc.c : Added definitions for `lock_init()`, `lock_acquire()`, `lock_release()`
+syscall.h : Added definitions for `SYS_lock_init`, `SYS_lock_acquire`, and `SYS_lock_release`
+mutex.h   : Defined `lock_t`

@@ -1,0 +1,8 @@
+defs.h    : This was used to add a forward declaration for the syscalls
+proc.c    : This was used to provide real implementation of the syscalls
+proc.h    : This was used to add the `nice` value to the structure itself
+syscall.c : This was used to reference the call to the behind the scenes implementation of the syscalls
+syscall.h : This was used to provide the prototype of the syscalls to the user
+sysproc.c : This was used to provide a redirecting intefrace for the syscalls
+user.h    : This was used to define the syscall interface to the user
+usys.S    : This was used to define the macro that connects the syscall that the user sees to the one that is defined for the system

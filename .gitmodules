@@ -1,0 +1,3 @@
+[submodule "group_work"]
+	path = group_work
+	url = https://github.com/ProjectDoodle/CSE325.git

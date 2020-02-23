@@ -1,0 +1,13 @@
+ESTIMATE OF TIME TO COMPLETE LAB: 10 hours
+
+          START  | TIME  | LAB   | WORK
+DATE    | TIME   | SPENT | PART  | COMPLETED
+-------------------------------------------
+08/09   | 02:30  | 01:00 | 1     | Read lab and finished cprintf exercise
+08/09   | 06:15  | 02:30 | 2     | Wrote initial body of set_priority/get_priority
+09/09   | 12:00  | 04:30 | 2     | Wrote majority of interface between user and kernel level calls
+10/09   | 19:00  | 01:30 | 2     | Finished of user kernel interface and wrote lab2test.c
+                 ---------
+                   09:00  TOTAL TIME SPENT
+
+The majority of difficulty in this lab was centered around interfacing between the user level and the kernel level syscall. This was not nessecarily because the code itself was difficult to write or get working, but rather due to the fact that the way they interface seemed very unrelated to me. Another minor issue I experienced was the fact that often after running `make clean` and then `make` the environment would tell me that the linker doesn't support compiler optimizations. This was quickly fixed by a quick restart or logout-login depending on the environment I was in. Other than that it took me a little while to figure out that the xv6 implementation of `printf` is similar to that of `fprintf`, and that I had to use `cprintf` in the syscall return value printer.
